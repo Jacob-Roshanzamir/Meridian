@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meridian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cockpit">
+  <header class="strip">
+    <span class="call">MERIDIAN</span>
+    <span class="readout" id="readout">HANGAR</span>
+    <button class="snd" id="sndBtn" aria-label="Sound on or off">SOUND ON</button>
+    <button class="help" id="helpBtn" aria-label="How to play" title="How to play">?</button>
+  </header>
+  <section class="canopy" id="canopy" aria-label="Cockpit window">
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <div class="cmsg" id="cmsg"></div>
+    <div class="planets" id="planets"></div>
+  </section>
+  <div class="placard" id="placard"></div>
+  <main class="console" id="console"></main>
+</div>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mtitle"><div class="bezel"><div class="mfd" id="mbody"></div></div></div>
+<script src="questions.js"></script>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
